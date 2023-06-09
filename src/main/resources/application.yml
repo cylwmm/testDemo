@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: testDemo
+  datasource:
+    url: jdbc:mysql://localhost:3306/learn?serverTimezone=Asia/Shanghai&useSSL=false&characterEncoding=utf8&useUnicode=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: cylwmm20161224

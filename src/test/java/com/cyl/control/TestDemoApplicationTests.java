@@ -1,4 +1,4 @@
-package com.example.testdemo;
+package com.cyl.control;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TestDemoApplicationTests {
 
     @Test
-    void contextLoads() {
+    void should_find_all_success() {
     }
 
 }

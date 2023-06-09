@@ -1,8 +1,9 @@
-package com.cyl.service;
+package com.cyl.service.impl;
 
 import com.cyl.convert.UserConvert;
-import com.cyl.repository.UserRepository;
+import com.cyl.repository.JDBC.UserRepository;
 import com.cyl.response.UserResponseDto;
+import com.cyl.service.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Service
-public class UserServiceImp {
+public class UserServiceImp implements UserService {
 
     private final UserRepository userRepository;
     private final UserConvert convert = UserConvert.INSTANCE;

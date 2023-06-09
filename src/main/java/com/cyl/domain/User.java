@@ -1,8 +1,15 @@
-package com.cyl.response;
+package com.cyl.domain;
+
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-public class UserResponseDto {
+@AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+@Builder
+public class User {
     String id;
     String name;
     String age;

@@ -1,4 +1,4 @@
-package com.cyl.repository;
+package com.cyl.repository.JDBC;
 
 import com.cyl.dataObject.UserDO;
 import org.springframework.data.repository.CrudRepository;

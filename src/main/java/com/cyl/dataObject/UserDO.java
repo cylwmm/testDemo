@@ -1,8 +1,16 @@
-package com.cyl.response;
+package com.cyl.dataObject;
+
+import lombok.*;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
 
-public class UserResponseDto {
+@AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+@Table("user")
+public class UserDO {
     String id;
     String name;
     String age;
