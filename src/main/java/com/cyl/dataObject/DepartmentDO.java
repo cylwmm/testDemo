@@ -1,6 +1,9 @@
 package com.cyl.dataObject;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
@@ -9,13 +12,10 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table("user")
-public class UserDO {
+@Table("department")
+public class DepartmentDO {
     String id;
     String name;
-    String age;
-    String password;
-    String departmentId;
     LocalDateTime createTime;
     LocalDateTime updateTime;
     Boolean deleted;

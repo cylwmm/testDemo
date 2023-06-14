@@ -1,6 +1,8 @@
 package com.cyl.service.impl;
 
+import com.cyl.annotation.SetNeedMethod;
 import com.cyl.convert.UserConvert;
+import com.cyl.domain.User;
 import com.cyl.repository.JDBC.UserRepository;
 import com.cyl.response.UserResponseDto;
 import com.cyl.service.service.UserService;
@@ -17,10 +19,10 @@ public class UserServiceImp implements UserService {
     private final UserRepository userRepository;
     private final UserConvert convert = UserConvert.INSTANCE;
 
-    public List<UserResponseDto> findAll() {
+    @SetNeedMethod
+    public List<User> findAll() {
         return userRepository.findAll()
                 .stream()
-                .map(convert::toDomain)
-                .map(convert::toResponse).collect(Collectors.toList());
+                .map(convert::toDomain).collect(Collectors.toList());
     }
 }
