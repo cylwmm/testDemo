@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -x
+echo Run gradle check before push to repository...
+
+./gradlew clean build

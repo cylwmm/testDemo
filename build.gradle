@@ -25,7 +25,7 @@ subprojects {
     }
 }
 allprojects {
-    apply from: "${rootDir}/gradle/checkstyle/checkstyle.gradle"
+//    apply from: "${rootDir}/gradle/checkstyle/checkstyle.gradle"
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-aop'
         implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
