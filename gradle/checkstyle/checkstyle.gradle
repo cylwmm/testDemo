@@ -1,0 +1,15 @@
+apply {
+    plugin('checkstyle')
+}
+
+checkstyle {
+    sourceSets = [sourceSets.main]
+    configFile file("${rootDir}/gradle/checkstyle/checkstyle.xml")
+    // The version of the code quality tool to be used.
+    toolVersion = "10.12.0"
+
+    // Whether or not rule violations are to be displayed on the console.
+    showViolations = true
+
+    ignoreFailures = false
+}
