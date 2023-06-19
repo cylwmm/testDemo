@@ -1,5 +1,6 @@
 package com.cyl.designmode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +20,7 @@ class SalesServiceTest {
         System.out.println("normal:" + normal);
         System.out.println("vip:" + vip);
         System.out.println("svip:" + svip);
+        Assertions.assertEquals(1000, normal);
     }
 
 }
