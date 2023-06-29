@@ -1,22 +1,25 @@
-package com.cyl.dataObject;
+package com.cyl.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
 @NoArgsConstructor
-@Table("department")
-public class DepartmentDO {
+public class BaseDO {
+    @Id
     private String id;
-    private String name;
+    @CreatedDate
     private LocalDateTime createTime;
+    @LastModifiedDate
     private LocalDateTime updateTime;
     private Boolean deleted;
 }

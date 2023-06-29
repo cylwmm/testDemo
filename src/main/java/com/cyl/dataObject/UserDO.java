@@ -1,6 +1,8 @@
 package com.cyl.dataObject;
 
+import com.cyl.common.BaseDO;
 import lombok.*;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
@@ -10,13 +12,11 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @Table("user")
-public class UserDO {
-    String id;
-    String name;
-    String age;
-    String password;
-    String departmentId;
-    LocalDateTime createTime;
-    LocalDateTime updateTime;
-    Boolean deleted;
+public class UserDO extends BaseDO {
+
+    private String name;
+    private String age;
+    private String password;
+    private String departmentId;
+
 }

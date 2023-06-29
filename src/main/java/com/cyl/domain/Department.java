@@ -1,6 +1,8 @@
 package com.cyl.domain;
 
+import com.cyl.common.AuditAggregateRoot;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
@@ -8,11 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-@Builder
-public class Department {
-    String id;
-    String name;
-    LocalDateTime createTime;
-    LocalDateTime updateTime;
-    Boolean deleted;
+@SuperBuilder
+public class Department extends AuditAggregateRoot {
+    private String name;
 }

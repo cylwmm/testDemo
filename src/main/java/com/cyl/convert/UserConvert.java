@@ -14,4 +14,7 @@ public interface UserConvert {
     UserResponseDto toResponse(User user);
 
     User toDomain(UserDO user);
+
+    UserDO toDO(User user);
+
 }

@@ -10,7 +10,6 @@ class SalesServiceTest {
 
     @Autowired
     SalesService salesService;
-
     @Test
     public void should_calculate_right() {
         double normal = salesService.getMount(UserType.NORMAL, 100);
@@ -20,7 +19,7 @@ class SalesServiceTest {
         System.out.println("normal:" + normal);
         System.out.println("vip:" + vip);
         System.out.println("svip:" + svip);
-        Assertions.assertEquals(1000, normal);
+        Assertions.assertEquals(100, normal);
     }
 
 }

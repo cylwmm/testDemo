@@ -1,22 +1,24 @@
-package com.cyl.dataObject;
+package com.cyl.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.relational.core.mapping.Table;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
 @NoArgsConstructor
-@Table("department")
-public class DepartmentDO {
-    private String id;
-    private String name;
+@SuperBuilder
+public class AuditAggregateRoot extends BaseEntity {
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
     private Boolean deleted;
+
+    public void logicDelete() {
+        this.deleted = Boolean.TRUE;
+    }
 }

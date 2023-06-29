@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class UserResponseDto {
-    String id;
-    String name;
-    String age;
-    String password;
-    String departmentId;
-    String departmentName;
-    LocalDateTime createTime;
-    LocalDateTime updateTime;
-    Boolean deleted;
+    private String id;
+    private String name;
+    private String age;
+    private String password;
+    private String departmentId;
+    private String departmentName;
+    private LocalDateTime createTime;
+    private LocalDateTime updateTime;
+    private Boolean deleted;
 }
