@@ -6,3 +6,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: cylwmm20161224
+  redis:
+    #Redis数据库索引（默认为0）
+    database: 1
+    #Redis服务器地址，请替换为自己的redis服务器地址
+    host: 127.0.0.1
+    #Redis服务器连接端口
+    port: 6379
+    #Redis服务器连接密码，无密码时，省略password
+server:
+  port: 8090
