@@ -1,5 +1,7 @@
 package com.cyl.designmode;
 
+import com.cyl.parten.strategy.SalesService;
+import com.cyl.parten.strategy.UserType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

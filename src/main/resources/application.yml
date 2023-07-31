@@ -2,7 +2,7 @@ spring:
   application:
     name: testDemo
   datasource:
-    url: jdbc:mysql://localhost:3306/learn?serverTimezone=Asia/Shanghai&useSSL=false&characterEncoding=utf8&useUnicode=true
+    url: jdbc:mysql://localhost:3306/learn?serverTimezone=Asia/Shanghai&useSSL=false&characterEncoding=utf8&useUnicode=true&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: cylwmm20161224
@@ -16,3 +16,6 @@ spring:
     #Redis服务器连接密码，无密码时，省略password
 server:
   port: 8090
+
+data-import:
+  batch-size: 100
